@@ -17,7 +17,7 @@ print(Fore.RED +
  |______  /(____  /__|  \___  >___|  /__|   __/ 
         \/      \/          \/     \/   |__|    """ + Style.RESET_ALL)
 
-filePath = input(Fore.CYAN + "\033[4m\n\nEnter Batch File Path You Want To Encyrpt: \033[0m" + Style.RESET_ALL)
+filePath = input(Fore.CYAN + "\033[4m\n\nEnter Batch File Path You Want To Encrypt: \033[0m" + Style.RESET_ALL)
 with open(filePath, "r", encoding='utf-8') as subject:
     batchLines = subject.readlines()
 
