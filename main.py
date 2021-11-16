@@ -49,6 +49,10 @@ def kodOlustur():
                 continue
             elif line == '\n':
                 continue
+            elif line == '>':
+                continue
+            elif line == '<':
+                continue
             if line == '%':
                 cmd = ''
             elif line == '>':
