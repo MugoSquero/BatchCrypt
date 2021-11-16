@@ -1,4 +1,7 @@
 # Batchip
+
+![__init__](https://github.com/MugoSquero/Batchip/raw/main/init.png)
+
 ----------
 #### Description:
 You can encrypt your BATCH files with Batchip.
