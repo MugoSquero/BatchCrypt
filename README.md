@@ -1,6 +1,6 @@
 # Batchip
 
-![__init__](https://github.com/MugoSquero/Batchip/raw/main/image.png)
+![__init__](https://github.com/MugoSquero/Batchip/raw/main/welcome.png)
 
 ----------
 #### Description:
