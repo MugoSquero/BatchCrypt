@@ -14,7 +14,7 @@ There is two encryption methods:
  2. Hex Encryption
 
 #### Encryption through variables:
-It's just make commands more complicated.
+It just makes commands more complicated.
 ##### Original:
 	echo hello world
 ##### Encrypted:
