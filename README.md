@@ -1,62 +1,71 @@
-# Batchip
+# BatchCrypt
 
-![__init__](https://github.com/MugoSquero/Batchip/raw/main/welcome.png)
+![__init__](https://github.com/MugoSquero/BatchCrypt/raw/main/welcome.png)
 
-----------
-#### Description:
-You can encrypt your BATCH files with Batchip.
-It simply allows you to encrypt batch files so no one can see the data, even antiviruses.
+BatchCrypt is a command-line tool that allows you to encrypt (obfuscate) batch files to enhance their security. It modifies and encodes batch file lines, ensuring that sensitive information within the batch files remains protected.
 
----------
-There is two encryption methods:
+## Features
 
- 1. Encryption through variables
- 2. Hex Encryption
+- Encrypts batch files by modifying and encoding the lines
+- Supports both single file encryption and batch directory encryption
+- Generates an encrypted batch file with the "_enced.bat" extension
+- Provides informative logging in the `batch_crypt.log` file
 
-#### Encryption through variables:
-It just makes commands more complicated.
-##### Original:
-	echo hello world
-##### Encrypted:
-	@echo off
-	setlocal EnableDelayedExpansion
-	set ZA=d
-	set bA=l
-	set aA=h
-	set bw=o
-	set ZQ=e
-	set Yw=c
-	set dw=w
-	set IA= 
-	set cg=r
-	cls
-	%ZQ%%Yw%%aA%%bw%%IA%%aA%%ZQ%%bA%%bA%%bw%%IA%%dw%%bw%%cg%%bA%%ZA%
+## Prerequisites
 
-#### Hex Encryption:
-In this encryption type, we add some hex values in the beginning of the file, what makes it unreadable but still executable!
-##### Original:
-	echo hello world
-##### Encrypted:
-	਍捥潨栠汥潬眠牯摬
+- Python 3.5 or higher
+- Required Python packages can be installed using the `requirements.txt` file.
 
-So yeah, it's obviously unreadable, but still works.
-Of course it's not gonna work when you paste them in the .bat file, because they are some hex values, not text or alien language.
+## Installation
 
-Credit: [RavelCros_Cro](https://www.youtube.com/c/RavelCrosCro/featured)
+1. Clone the BatchCrypt repository:
 
-----------
+   ```bash
+   git clone https://github.com/MugoSquero/BatchCrypt.git
+   ```
 
-#### Installing:
-	pip3 install colorama
+2. Navigate to the project directory:
 
-or just...
+   ```bash
+   cd BatchCrypt
+   ```
 
-	pip3 install -r requirements.txt
+3. Install the required Python packages:
 
-Because we need colorama for colored output.
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-And then, just run it.
+## Usage
 
-	python3 main.py
+To encrypt a single batch file, use the following command:
 
-It works both in Windows or Linux
+```bash
+python main.py -i /path/to/input_file.bat
+```
+
+To encrypt all batch files in a directory, use the following command:
+
+```bash
+python main.py -r /path/to/batch_directory
+```
+
+## Output
+
+The encrypted batch file will be saved in the same directory as the original batch file with the suffix "_enced.bat". For example, if the original batch file is named "script.bat", the encrypted file will be named "script_enced.bat".
+
+## Logging
+
+The tool generates a log file named `batch_crypt.log` in the same directory as the script. This log file contains any errors or exceptions encountered during the encryption process.
+
+## Disclaimer
+
+Please note that BatchCrypt is provided as-is without any warranty. Use it responsibly and ensure that you have appropriate permissions to encrypt batch files.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Credits
+
+BatchCrypt is created and maintained by [MugoSquero](https://github.com/MugoSquero).
